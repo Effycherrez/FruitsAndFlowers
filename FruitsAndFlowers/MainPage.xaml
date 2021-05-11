@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FruitsAndFlowers.MainPage">
+
+    <Grid>
+        <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+        <BoxView Color="Blue" Opacity="0.8"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Source="logoff.png" WidthRequest="100" HeightRequest="100" Margin="0,90,0,30"/>
+            <StackLayout Grid.Row="1" Padding="30,20">
+                <Entry x:Name="txtuser" Placeholder="Usuario" PlaceholderColor="White"/>
+                <Entry x:Name="txtclave" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                <Button x:Name="btnAbrir" Text="Iniciar sesion" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked ="btnAbrir_Clicked"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Recuperar contraseña" TextColor="White" ></Label>
+                    <Label Text="Registrarme" TextColor="White" ></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,0,0,50">
+                <Label Text="Iniciar secion con" TextColor="White" HorizontalOptions="Center"></Label>
+                <StackLayout Orientation="Horizontal">
+                    <Image Grid.Row="0" Source="fb.png" WidthRequest="45" HeightRequest="45"/>
+                    <Image Grid.Row="0" Source="google.png" WidthRequest="45" HeightRequest="45"/>
+                    <Image Grid.Row="0" Source="tw.png" WidthRequest="45" HeightRequest="45"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>
