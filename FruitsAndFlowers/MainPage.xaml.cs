@@ -23,19 +23,20 @@ namespace FruitsAndFlowers
                 String clave = Convert.ToString(txtclave.Text);
                 if (usuario == "estudiante2021" && clave == "uisrael2021")
                 {
-                    await Navigation.PushAsync(new menu());
+                    await Navigation.PushAsync(new Inicio());
                 }
                 else
                 {
-                    DisplayAlert("Alerta", "Inserte sus credenciales de forma correcta", "Gracias");
+                    await DisplayAlert("Alerta", "Inserte sus credenciales de forma correcta", "Gracias");
                 }
             }
             catch (Exception ex)
             {
-                DisplayAlert("Alerta", ex.Message, "Gracias");
+                await DisplayAlert("Alerta", ex.Message, "Gracias");
             }
 
 
         }
+       
     }
 }

@@ -16,13 +16,15 @@
 
             <Image Grid.Row="0" Source="logoff.png" WidthRequest="100" HeightRequest="100" Margin="0,90,0,30"/>
             <StackLayout Grid.Row="1" Padding="30,20">
-                <Entry x:Name="txtuser" Placeholder="Usuario" PlaceholderColor="White"/>
-                <Entry x:Name="txtclave" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
+                <Entry x:Name="txtuser" Placeholder="Usuario" PlaceholderColor="White" TextColor="White"/>
+                <Entry x:Name="txtclave" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True" TextColor="White"/>
                 <Button x:Name="btnAbrir" Text="Iniciar sesion" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked ="btnAbrir_Clicked"/>
 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Recuperar contraseña" TextColor="White" ></Label>
-                    <Label Text="Registrarme" TextColor="White" ></Label>
+                    <Label Text="Registrarme" x:Name="lblRegistrarme" TextColor="White" >
+                       
+                    </Label>
                 </StackLayout>
             </StackLayout>
 
