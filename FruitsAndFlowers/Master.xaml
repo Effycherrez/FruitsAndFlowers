@@ -4,9 +4,15 @@
              x:Class="FruitsAndFlowers.Master"
              Title="Master">
     <ContentPage.Content>
+        <Grid>
+            <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+            <BoxView Color="Black" Opacity="0.8"/>
+            
+       
         <StackLayout>
             <Button Text="Perfil " x:Name="btnPerfil" BackgroundColor="White" Clicked="btnPerfil_Clicked"/>
             <Button Text="Productos" x:Name="bntProductos" BackgroundColor="White" Clicked="bntProductos_Clicked"/>
         </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

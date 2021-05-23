@@ -4,6 +4,7 @@
              x:Class="FruitsAndFlowers.flores"
              Title="Arreglos Florales"
              Icon="flores.png">
+    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Bienvenidos a Arreglos Florales"
