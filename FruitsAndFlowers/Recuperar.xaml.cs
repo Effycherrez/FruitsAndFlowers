@@ -10,12 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace FruitsAndFlowers
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class menu : TabbedPage
+    public partial class Recuperar : ContentPage
     {
-        public menu()
+        public Recuperar()
         {
             InitializeComponent();
-            NavigationPage.SetHasBackButton(this, false);
+        }
+
+        private void btnEnviar_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FruitsAndFlowers.MainPage">
+             x:Class="FruitsAndFlowers.MainPage"
+             NavigationPage.HasNavigationBar="False">
 
     <Grid>
         <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
@@ -21,10 +22,8 @@
                 <Button x:Name="btnAbrir" Text="Iniciar sesion" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked ="btnAbrir_Clicked"/>
 
                 <StackLayout Orientation="Horizontal">
-                    <Label Text="Recuperar contraseña" TextColor="White" ></Label>
-                    <Label Text="Registrarme" x:Name="lblRegistrarme" TextColor="White" >
-                       
-                    </Label>
+                    <Button x:Name="bntRecuperar" Text="Recuperar Contraseña" Clicked="bntRecuperar_Clicked"/>
+                    <Button x:Name="bntRegistro" Text="Registrarse" Clicked="bntRegistro_Clicked" />
                 </StackLayout>
             </StackLayout>
 

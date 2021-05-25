@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FruitsAndFlowers.Recuperar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry x:Name="txtRecuperaEmail" Placeholder="Ingrese su email" PlaceholderColor="White" TextColor="White"/>
+                    <Button x:Name="btnEnviar" Text="Recuperar" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked ="btnEnviar_Clicked"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

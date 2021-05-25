@@ -3,6 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FruitsAndFlowers.Registro">
     
+<<<<<<< HEAD
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup>
+                        <VisualState>
+                            <VisualState.StateTriggers>
+                                <AdaptiveTrigger MinWindowWidth="640" />
+                            </VisualState.StateTriggers>
+
+                            
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                
+            </Grid>
+=======
         <ContentPage.Content>
         <Grid>
 
@@ -13,6 +32,7 @@
             <Label Text="Registro!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+>>>>>>> f34a7726bdd539f4dab4ff2d837c2f063009ed62
         </StackLayout>
         </Grid>
     </ContentPage.Content>

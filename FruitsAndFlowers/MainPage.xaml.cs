@@ -37,6 +37,24 @@ namespace FruitsAndFlowers
 
 
         }
-       
+               
+        private async  void bntRegistro_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+
+                    await Navigation.PushAsync(new Registro());
+               
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Alerta", ex.Message, "Gracias");
+            }
+        }
+
+        private async void bntRecuperar_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Recuperar());
+        }
     }
 }

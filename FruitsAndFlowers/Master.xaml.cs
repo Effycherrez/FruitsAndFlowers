@@ -15,6 +15,7 @@ namespace FruitsAndFlowers
         public Master()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
 
         private async void btnPerfil_Clicked(object sender, EventArgs e)

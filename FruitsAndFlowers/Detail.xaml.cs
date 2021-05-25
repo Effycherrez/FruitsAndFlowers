@@ -15,6 +15,7 @@ namespace FruitsAndFlowers
         public Detail()
         {
             InitializeComponent();
+            NavigationPage.SetHasBackButton(this, false);
         }
     }
 }
