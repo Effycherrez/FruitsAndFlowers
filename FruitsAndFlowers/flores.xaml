@@ -4,13 +4,47 @@
              x:Class="FruitsAndFlowers.flores"
              Title="Arreglos Florales"
              Icon="flores.png">
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenidos a Arreglos Florales"
-                   TextColor="Blue"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+        <BoxView Color="Black" Opacity="0.8"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="10,12">
+                <Label Text="Bienvenido a Arreglos Frorales!"
+                    FontSize="20" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout Grid.Row="2">
+
+
+                    <StackLayout>
+                        <Label Grid.Row="0" Text="Escalera Floral" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, base de barro" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="0" Source="fl1.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="3" Text="Mil colores Floral" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, base de barro" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="3" Source="fl2.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="La mejor sorpresa Floral" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, base de barro" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="fl3.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="Amor Floral" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, base de barro" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="fl4.jpg" WidthRequest="60" HeightRequest="60"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+
 </ContentPage>

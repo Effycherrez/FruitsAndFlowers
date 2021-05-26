@@ -4,12 +4,46 @@
              x:Class="FruitsAndFlowers.desayunos"
              Title="Desayunos Personalizados"
              Icon="regalo.png">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenido a Desayunos Personalizados!"
-                   TextColor="blue"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+        <BoxView Color="Black" Opacity="0.8"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="10,12">
+                <Label Text="Bienvenido a Desayunos Personalizados!"
+                    FontSize="20" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout Grid.Row="2">
+
+
+                    <StackLayout>
+                        <Label Grid.Row="0" Text="Desayuno Personal" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="1 jugo, 1 Sanduche, 1 Ensalada de Frutas, 1 Snack" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="0" Source="ig1.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="3" Text="Desayuno Para Compartir" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="2 jugos, 2 Sanduche, 2 Ensalada de Frutas, 2 Snack" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="3" Source="ig2.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="Desayuno Mil colores" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="2 jugos, 2 Sanduche, 2 Ensalada de Frutas, 3 Snack, Flores" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="ig3.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="Desayuno La Mejor sorpresa" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="2 jugos, 2 Sanduche, 1 Ensalada de Frutas, 2 Snack, 1 Pastel, yogurt, decoracion" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="ig4.jpg" WidthRequest="60" HeightRequest="60"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </Grid>
+    </Grid>
 </ContentPage>
