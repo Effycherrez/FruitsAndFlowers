@@ -10,8 +10,9 @@
             
 
             <StackLayout>
-            <Button Text="Perfil " x:Name="btnPerfil" BackgroundColor="White" Clicked="btnPerfil_Clicked"/>
-            <Button Text="Productos" x:Name="bntProductos" BackgroundColor="White" Clicked="bntProductos_Clicked"/>
+                <Image Grid.Row="0" Source="logoff.png" WidthRequest="200" HeightRequest="200"/>
+                <Button Text="Perfil " x:Name="btnPerfil" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked="btnPerfil_Clicked"/>
+                <Button Text="Productos" x:Name="bntProductos" BackgroundColor="Black" BorderRadius="20" TextColor="White" Clicked="bntProductos_Clicked"/>
         </StackLayout>
         </Grid>
     </ContentPage.Content>

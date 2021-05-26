@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FruitsAndFlowers.Detail">
-    <ContentPage.Content>
+    <Grid>
+        <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+        <BoxView Color="Black" Opacity="0.8"/>
         <StackLayout>
-            <Image Grid.Row="0" Source="logoff.png" WidthRequest="100" HeightRequest="100" Margin="0,90,0,30" />
+            <Image Grid.Row="0" Source="dl1.png" WidthRequest="100" HeightRequest="100" Margin="0,90,0,30" />
             <Label Text="master"/>
         </StackLayout>
-    </ContentPage.Content>
+   </Grid>
 </ContentPage>

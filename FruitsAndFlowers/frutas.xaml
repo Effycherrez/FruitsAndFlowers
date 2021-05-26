@@ -4,12 +4,47 @@
              x:Class="FruitsAndFlowers.frutas"
              Title="Arreglos Frutales"
              Icon="frutas.png">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenido a Arreglos Frutales!"
-                   TextColor="Blue"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+        <BoxView Color="Black" Opacity="0.8"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Padding="10,12">
+                <Label Text="Bienvenido a Arreglos Frutales!"
+                    FontSize="20" TextColor="White"
+                    VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+                <StackLayout Grid.Row="2">
+
+
+                    <StackLayout>
+                        <Label Grid.Row="0" Text="Escalera Flutal" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, cabasta de mimbre, frutas de primera calidad" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="0" Source="fr1.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="3" Text="Mil colores Frutal" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, cabasta de mimbre, frutas de primera calidad" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="3" Source="fr2.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="La mejor sorpresa Frutal" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, cabasta de mimbre, frutas de primera calidad" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="fr3.jpg" WidthRequest="60" HeightRequest="60"/>
+                        <Label Grid.Row="5" Text="Arco frutal" TextColor="White" FontSize="17" ></Label>
+                        <Label Grid.Row="1" Text="Contiene Flores de exportacion, cabasta de mimbre, frutas de primera calidad" TextColor="White" FontSize="15" ></Label>
+                        <Image Grid.Row="5" Source="fr4.jpg" WidthRequest="60" HeightRequest="60"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+
 </ContentPage>
