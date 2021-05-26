@@ -119,7 +119,7 @@ namespace FruitsAndFlowers
 				Application.Current.Properties.Add("DisplayName", user.Name);
 				Application.Current.Properties.Add("EmailAddress", user.Email);
 				Application.Current.Properties.Add("ProfilePicture", user.Picture);
-				await Navigation.PushAsync(new Perfil());
+				await Navigation.PushAsync(new Inicio());
 
 			}
 		}

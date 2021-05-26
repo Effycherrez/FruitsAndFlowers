@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Image Grid.Row="0" Source="logoff.png" WidthRequest="100" HeightRequest="100" Margin="0,90,0,30" />
-            
+            <Label Text="master"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
