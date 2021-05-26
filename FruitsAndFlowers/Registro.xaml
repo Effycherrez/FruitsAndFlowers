@@ -10,10 +10,26 @@
             <BoxView Color="Black" Opacity="0.8"/>
 
             <StackLayout>
-            <Label Text="Registro!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                    <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+                </Frame>
+                <Image x:Name="imgPerfil" Source="ProfilePicture.png"></Image>
+                <Label></Label>
+
+                <Label x:Name="lblId" FontSize="Large" Text="Id : " />
+                <Label></Label>
+
+                <Label x:Name="lblNombre" FontSize="Large" Text="Nombre: "/>
+                <Label></Label>
+
+                <Label x:Name="lblApellido" FontSize="Large" Text="Apellido:" />
+                <Label></Label>
+
+                <Label x:Name="lblEmail" FontSize="Large" Text="email: "/>
+                <Label></Label>
+
+                <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
        
